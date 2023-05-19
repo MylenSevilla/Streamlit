@@ -18,7 +18,7 @@ model=load_model()
 st.write("""
 # Flower Classification"""
 )
-file=st.file_uploader("Upload a weather photo from your computer.",type=["jpg","png"])
+file=st.file_uploader("Upload a flower photo from your computer.",type=["jpg","png"])
 
 import cv2
 from PIL import Image,ImageOps
