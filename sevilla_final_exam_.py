@@ -55,8 +55,8 @@ if selected_option == "About":
 
 elif selected_option == "Help":
     st.sidebar.write("Choose an image related to flowers (rose, sunflower, tulip, dandelion,daisy)")
-    st.sidebar.write("Upload a flower image'.")
-    st.sidebar.write("Wait the results'.")
+    st.sidebar.write("Upload a flower image")
+    st.sidebar.write("Wait the results")
     
 elif selected_option == "GitHub Link":
     st.sidebar.write("https://github.com/MylenSevilla/Streamlit/tree/main")
