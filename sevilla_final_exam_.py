@@ -39,3 +39,25 @@ else:
     class_names = ['tulip', 'sunflower', 'rose', 'dandelion', 'daisy']
     string="THE FLOWER IS : "+class_names[np.argmax(prediction)]
     st.success(string)
+
+    
+   # Adding a sidebar
+st.sidebar.title("Menu")
+selected_option = st.sidebar.selectbox("Select", ("About", "Help", "Visualization", "Conclusion"))
+
+if selected_option == "About":
+    st.sidebar.write("- Name: Sevilla, Mylen B.")
+    st.sidebar.write("- Section and Grade: CPE32S4")
+    st.sidebar.write("- Instructor: Dr. Jonathan Taylar")
+
+elif selected_option == "Help":
+    st.sidebar.write("Upload a flower photo from your computer and click 'Predict'.")
+
+elif selected_option == "Visualization":
+    st.sidebar.write("Visualize the uploaded image")
+    if file is not None:
+        st.sidebar.subheader("Uploaded Image")
+        st.sidebar.image(image)
+
+elif selected_option == "Conclusion":
+    st.sidebar.write("message")
