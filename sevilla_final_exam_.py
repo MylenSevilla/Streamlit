@@ -59,6 +59,10 @@ elif selected_option == "Help":
     st.sidebar.write("Wait the results")
     
 elif selected_option == "GitHub Link":
+    st.sidebar.write("This is the GitHub link of the student streamlit repository (final exam)")
+    st.sidebar.write("")
+    st.sidebar.write("Click the Link Below:")
+    st.sidebar.write("LINK:")
     st.sidebar.write("https://github.com/MylenSevilla/Streamlit/tree/main")
 
 elif selected_option == "Conclusion":
