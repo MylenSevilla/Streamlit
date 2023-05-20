@@ -31,7 +31,7 @@ def import_and_predict(image_data,model):
     prediction=model.predict(img_reshape)
     return prediction
 if file is None:
-    st.text("Please upload an image of flower (rose, tulip, dandelion, daisy, sunflower).")
+    st.text("Please upload an image of the flower (sunflower, rose, tulip, dandelion, daisy).")
 else:
     image=Image.open(file)
     st.image(image,use_column_width=True)
@@ -43,7 +43,7 @@ else:
     
    # Adding a sidebar
 st.sidebar.title("Menu")
-selected_option = st.sidebar.selectbox("Select", ("About", "Help", "Visualization", "Conclusion"))
+selected_option = st.sidebar.selectbox("Select", ("About", "Help", "Conclusion"))
 
 if selected_option == "About":
     st.sidebar.write("- Name: Sevilla, Mylen B.")
@@ -51,13 +51,9 @@ if selected_option == "About":
     st.sidebar.write("- Instructor: Dr. Jonathan Taylar")
 
 elif selected_option == "Help":
-    st.sidebar.write("Upload a flower photo from your computer and click 'Predict'.")
-
-elif selected_option == "Visualization":
-    st.sidebar.write("Visualize the uploaded image")
-    if file is not None:
-        st.sidebar.subheader("Uploaded Image")
-        st.sidebar.image(image)
+    st.sidebar.write("Choose an image related to flowers (rose, sunflower, tulip, dandelion,daisy)'.")
+    st.sidebar.write("Upload a flower image'.")
+    st.sidebar.write("Wait the results'.")
 
 elif selected_option == "Conclusion":
     st.sidebar.write("message")
