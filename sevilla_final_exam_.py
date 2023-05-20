@@ -43,7 +43,7 @@ else:
     
    # Adding a sidebar
 st.sidebar.title("Menu")
-selected_option = st.sidebar.selectbox("Select", ("About", "Help", "Conclusion"))
+selected_option = st.sidebar.selectbox("Select", ("About", "Help", "GitHub Link", "Conclusion"))
 
 if selected_option == "About":
     st.sidebar.write("- Name: Sevilla, Mylen B.")
@@ -51,9 +51,12 @@ if selected_option == "About":
     st.sidebar.write("- Instructor: Dr. Jonathan Taylar")
 
 elif selected_option == "Help":
-    st.sidebar.write("Choose an image related to flowers (rose, sunflower, tulip, dandelion,daisy)'.")
+    st.sidebar.write("Choose an image related to flowers (rose, sunflower, tulip, dandelion,daisy)")
     st.sidebar.write("Upload a flower image'.")
     st.sidebar.write("Wait the results'.")
+    
+elif selected_option == "GitHub Link":
+    st.sidebar.write("https://github.com/MylenSevilla/Streamlit/tree/main")
 
 elif selected_option == "Conclusion":
     st.sidebar.write("To sum it up, this activity is all about the model deployment in the cloud and will serve as a final exam for the student. In this activity, the student trains a dataset that will predict the flower classification, saves the model, and deploys the deep learning model in the cloud. Through this activity, the student was able to learn why model deployment in the cloud is important; it is crucial for achieving scalability, cost-efficiency, reliability, worldwide accessibility, collaboration, and security. It enables organizations to effortlessly scale models as needed, reduce expenses through flexible pricing, ensure consistent availability, reach a global user base, facilitate teamwork, and leverage advanced security measures. Cloud deployment simplifies the process, optimizes model utilization, and minimizes operational challenges. Furthermore, the student was also able to understand the importance of using Streamlit due to its intuitive interface, rapid prototyping and iteration, smooth integration with popular machine learning frameworks, interactive visualization features, effortless collaboration and sharing options, and cost-effectiveness. By using Streamlit, students can deploy their models swiftly, design attractive user interfaces, collaborate efficiently, and effectively showcase their machine learning projects.")
