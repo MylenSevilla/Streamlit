@@ -46,9 +46,12 @@ st.sidebar.title("Menu")
 selected_option = st.sidebar.selectbox("Select", ("About", "Help", "GitHub Link", "Conclusion"))
 
 if selected_option == "About":
-    st.sidebar.write("- Name: Sevilla, Mylen B.")
-    st.sidebar.write("- Section and Grade: CPE32S4")
-    st.sidebar.write("- Instructor: Dr. Jonathan Taylar")
+    st.sidebar.write("It is a flower dataset that contains 50 images per flower class for flower classification")
+    st.sidebar.write("")
+    st.sidebar.write("Author:")
+    st.sidebar.write("Name: Sevilla, Mylen B.")
+    st.sidebar.write("Section and Grade: CPE32S4")
+    st.sidebar.write("Instructor: Dr. Jonathan Taylar")
 
 elif selected_option == "Help":
     st.sidebar.write("Choose an image related to flowers (rose, sunflower, tulip, dandelion,daisy)")
